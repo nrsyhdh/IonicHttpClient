@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Create Student</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "ion-padding">
+
+  <ion-item>
+    <ion-label position="floating">Code</ion-label>
+    <ion-input [(ngModel)]="data.code"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-input [(ngModel)]="data.desc" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Price</ion-label>
+    <ion-input [(ngModel)]="data.price" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Date</ion-label>
+    <ion-datetime display-timezone="utc" [(ngModel)]="data.date"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click) = "submitForm()">
+      Add
+    </ion-button>
+    <ion-button [routerLink]="['/student-list']" color="danger" size="small">
+      Cancel
+    </ion-button>
+  </ion-item>
+  
+
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>All Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <table class="table table-bordered ion-padding table-latitude">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Code</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of studentsData">
+          <td>{{ item.id }}</td>
+          <td>{{ item.code }}</td>
+          <td style = "display: flex;">
+            <ion-button color="tertiary" size = "small" routerLink="/student-detail/{{item.id}}">
+              <ion-icon name = "eye"></ion-icon>
+            </ion-button>
+            <ion-button color="warning" size = "small" routerLink="/student-edit/{{item.id}}">
+              <ion-icon name = "create"></ion-icon>
+            </ion-button>
+            <ion-button color="danger" size = "small" (click)="delete(item)">
+              <ion-icon name = "trash"></ion-icon>
+            </ion-button>
+          </td>
+      </tr>
+    </tbody>
+  </table>
+  <ion-button [routerLink]="['/student-create']">
+    Add Student
+  </ion-button>
+
+</ion-content>

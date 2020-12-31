@@ -1,0 +1,64 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Enola Rowe",
+      "username": "enola",
+      "email": "enola@rowe.com",
+      "code": "A1",
+      "desc": "sunt aut facere repellat provident",
+      "price": "19.00",
+      "date": "2019-07-05T13:33:03.969-00:00"
+    },
+    {
+      "id": 2,
+      "name": "Timmothy Lueilwitz",
+      "username": "tim",
+      "email": "timmothy@lueilwitz.com",
+      "code": "B2",
+      "desc": "qui est esse",
+      "price": "12.00",
+      "date": "2019-07-04T13:33:03.969Z"
+    },
+    {
+      "id": 3,
+      "name": "Madilyn Pacocha",
+      "username": "madilyn",
+      "email": "madilyn@pacocha.com",
+      "code": "C3",
+      "desc": "ea molestias quasi exercitationem repellat",
+      "price": "16.00",
+      "date": "2019-07-04T13:33:03.969Z"
+    },
+    {
+      "id": 4,
+      "name": "Harley Cremin",
+      "username": "harley",
+      "email": "harley@cremin.com",
+      "code": "D4",
+      "desc": "eum et est occaecati",
+      "price": "11.00",
+      "date": "2019-07-04T13:33:03.969Z"
+    },
+    {
+      "id": 5,
+      "name": "Juana Ziemann",
+      "username": "juana",
+      "email": "juana@ziemann.com",
+      "code": "F5",
+      "desc": "dolorem eum magni eos aperiam quia",
+      "price": "18.00",
+      "date": "2019-07-04T13:33:03.969Z"
+    },
+    {
+      "id": 6,
+      "name": "Leanne Graham",
+      "username": "leanne",
+      "email": "leanne@graham.com",
+      "code": "G6",
+      "desc": "magnam facilis autem",
+      "price": "14.00",
+      "date": "2019-07-04T13:33:03.969Z"
+    }
+  ]
+}

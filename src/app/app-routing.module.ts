@@ -2,14 +2,22 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'student-list', pathMatch: 'full' },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'student-create',
+    loadChildren: () => import('./student-create/student-create.module').then( m => m.StudentCreatePageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'student-edit/:id',
+    loadChildren: () => import('./student-edit/student-edit.module').then( m => m.StudentEditPageModule)
+  },
+  {
+    path: 'student-list',
+    loadChildren: () => import('./student-list/student-list.module').then( m => m.StudentListPageModule)
+  },
+  {
+    path: 'student-detail/:id',
+    loadChildren: () => import('./student-detail/student-detail.module').then( m => m.StudentDetailPageModule)
   },
 ];
 

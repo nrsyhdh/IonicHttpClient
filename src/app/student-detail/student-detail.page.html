@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Student Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class = "ion-padding">
+
+  <ion-item>
+    <ion-label><strong>Code</strong></ion-label>
+    {{data.code}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label><strong>Description</strong></ion-label>
+    {{data.desc}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label><strong>Price</strong></ion-label>
+    RM{{data.price}}
+  </ion-item>
+
+  <ion-item>
+    <ion-label><strong>Date</strong></ion-label>
+    {{data.date | date: "MMM dd, yyyy HH:mm"}}
+  </ion-item>
+
+</ion-content>
